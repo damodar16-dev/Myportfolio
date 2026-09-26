@@ -1,182 +1,313 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 
-<title>Damodar Gouda | Portfolio</title>
-
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<!-- Navigation -->
-<nav>
-<div class="logo">Damodar.</div>
-
-<div class="nav-links">
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-</div>
-</nav>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b1020;
+    color: white;
+}
 
 
-<!-- Home Section -->
-<section id="home" class="hero">
+/* Navigation */
 
-<div class="hero-text">
+nav {
+    background: #11182d;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #27304d;
+}
 
-<p class="small-title">WELCOME TO MY PORTFOLIO</p>
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #00d9ff;
+}
 
-<h1>
- Hi, I'm <span>Damodar Gouda</span>
-</h1>
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: 0.3s;
+}
 
-<h2>IT Student & Software Developer</h2>
-
-<p>
- I love creating websites, learning new technologies
-and building useful software projects.
-</p>
-
-<div class="buttons">
-<a href="#projects" class="btn">View My Work</a>
-<a href="#contact" class="btn outline">Contact Me</a>
-</div>
-
-</div>
-
-<div class="hero-card">
-<div class="circle">DG</div>
-<h2>Software Developer</h2>
-<p>Always Learning • Always Building</p>
-</div>
-
-</section>
+.nav-links a:hover {
+    color: #00d9ff;
+}
 
 
-<!-- About -->
-<section id="about" class="section">
+/* Hero */
 
-<p class="section-title">ABOUT ME</p>
+.hero {
+    min-height: 90vh;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background: linear-gradient(135deg, #0b1020, #102a43);
+}
 
-<h2>Turning Ideas Into <span>Reality</span></h2>
+.hero-text {
+    max-width: 650px;
+}
 
-<p class="description">
-                      I am a final year Information Technology student interested in
-                      software development and web technologies. I enjoy learning,
-                      experimenting with new technologies and creating projects that
-                      solve real-world problems.
-</p>
+.small-title,
+.section-title {
+    color: #00d9ff;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
 
-</section>
+.hero h1 {
+    font-size: 55px;
+    margin: 15px 0;
+}
 
+.hero h1 span,
+.section h2 span,
+.contact h2 span {
+    color: #00d9ff;
+}
 
-<!-- Skills -->
-<section id="skills" class="section skills-section">
+.hero h2 {
+    color: #b9c6d8;
+    font-size: 25px;
+}
 
-<p class="section-title">MY SKILLS</p>
-
-<h2>Technologies I Work With</h2>
-
-<div class="skills">
-
-<div class="skill-card">
-<h3>☕ Java</h3>
-<p>Programming & Application Development</p>
-</div>
-
-<div class="skill-card">
-<h3>🌐 HTML & CSS</h3>
-<p>Web Design & Frontend Development</p>
-</div>
-
-<div class="skill-card">
-<h3>🐬 MySQL</h3>
-<p>Database Management</p>
-</div>
-
-<div class="skill-card">
-<h3>🐙 Git & GitHub</h3>
-<p>Version Control & Collaboration</p>
-</div>
-
-</div>
-
-</section>
+.hero p {
+    color: #aeb9ca;
+    font-size: 18px;
+    line-height: 1.7;
+}
 
 
-<!-- Projects -->
-<section id="projects" class="section">
+/* Buttons */
 
-<p class="section-title">MY WORK</p>
+.buttons {
+    margin-top: 30px;
+}
 
-<h2>Featured Projects</h2>
+.btn {
+    display: inline-block;
+    background: #00bcd4;
+    color: #06111c;
+    padding: 13px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: 0.3s;
+}
 
-<div class="projects">
+.btn:hover {
+    background: #00e5ff;
+    transform: translateY(-3px);
+}
 
-<div class="project-card">
-<div class="project-icon">💻</div>
-<h3>Portfolio Website</h3>
-<p>
- A responsive personal portfolio website created
- using HTML and CSS.
-</p>
-<span>HTML • CSS</span>
-</div>
-
-<div class="project-card">
-<div class="project-icon">🎓</div>
-<h3>Student Management System</h3>
-<p>
- A system designed to manage student information
- and academic records.
-</p>
-<span>Java • MySQL</span>
-</div>
-
-<div class="project-card">
-<div class="project-icon">🚀</div>
-<h3>Future Project</h3>
-<p>
- Currently learning and working on new software
- development projects.
-</p>
-<span>Coming Soon</span>
-</div>
-
-</div>
-
-</section>
+.btn.outline {
+    background: transparent;
+    color: #00d9ff;
+    border: 1px solid #00d9ff;
+}
 
 
-<!-- Contact -->
-<section id="contact" class="contact">
+/* Hero Card */
 
-<p class="section-title">GET IN TOUCH</p>
+.hero-card {
+    width: 320px;
+    padding: 45px 25px;
+    text-align: center;
+    background: #151e35;
+    border: 1px solid #29385c;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
 
-<h2>Let's <span>Connect!</span></h2>
+.circle {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #0077ff, #00d9ff);
+}
 
-<p>
- Have a project idea or just want to say hello?
- Feel free to contact me.
-</p>
-
-<a href="mailto:Damodargouda99@gmail.com" class="btn">
-                                                     ✉ Email Me
-</a>
-
-</section>
+.hero-card h2 {
+    color: white;
+}
 
 
-<!-- Footer -->
-<footer>
-<p>© 2026 Damodar Gouda | My Portfolio</p>
-</footer>
+/* General Sections */
 
-</body>
-</html>
+.section {
+    padding: 90px 8%;
+    text-align: center;
+}
+
+.section h2,
+.contact h2 {
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.description {
+    max-width: 750px;
+    margin: auto;
+    color: #aeb9ca;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* Skills */
+
+.skills-section {
+    background: #0f172a;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.skill-card {
+    width: 220px;
+    padding: 25px;
+    background: #151e35;
+    border: 1px solid #29385c;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    border-color: #00d9ff;
+}
+
+.skill-card h3 {
+    color: #00d9ff;
+}
+
+.skill-card p {
+    color: #aeb9ca;
+}
+
+
+/* Projects */
+
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.project-card {
+    width: 300px;
+    padding: 30px;
+    text-align: left;
+    background: #151e35;
+    border: 1px solid #29385c;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: #00d9ff;
+}
+
+.project-icon {
+    font-size: 40px;
+}
+
+.project-card h3 {
+    font-size: 22px;
+}
+
+.project-card p {
+    color: #aeb9ca;
+    line-height: 1.6;
+}
+
+.project-card span {
+    color: #00d9ff;
+    font-size: 14px;
+}
+
+
+/* Contact */
+
+.contact {
+    padding: 100px 8%;
+    text-align: center;
+    background: linear-gradient(135deg, #102a43, #0b1020);
+}
+
+.contact p {
+    color: #aeb9ca;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+
+/* Footer */
+
+footer {
+    background: #070b15;
+    text-align: center;
+    padding: 20px;
+    color: #8793a8;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links a {
+        margin: 8px;
+        font-size: 14px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-card {
+        width: 280px;
+    }
+
+    .section h2,
+    .contact h2 {
+        font-size: 30px;
+    }
+}
