@@ -1,43 +1,182 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Damodar Gouda | Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- Navigation -->
 <nav>
-    <h2>My Portfolio</h2>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+    <div class="logo">Damodar.</div>
+
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
 </nav>
 
-<section id="home">
-    <h1>Hello, I'm Damodar Gouda</h1>
-    <p>Final Year IT Student | Software Developer</p>
-    <button>Hire Me</button>
+
+<!-- Home Section -->
+<section id="home" class="hero">
+
+    <div class="hero-text">
+
+        <p class="small-title">WELCOME TO MY PORTFOLIO</p>
+
+        <h1>
+            Hi, I'm <span>Damodar Gouda</span>
+        </h1>
+
+        <h2>IT Student & Software Developer</h2>
+
+        <p>
+            I love creating websites, learning new technologies
+            and building useful software projects.
+        </p>
+
+        <div class="buttons">
+            <a href="#projects" class="btn">View My Work</a>
+            <a href="#contact" class="btn outline">Contact Me</a>
+        </div>
+
+    </div>
+
+    <div class="hero-card">
+        <div class="circle">DG</div>
+        <h2>Software Developer</h2>
+        <p>Always Learning • Always Building</p>
+    </div>
+
 </section>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>Always learning, always building, always improving.</p>
+
+<!-- About -->
+<section id="about" class="section">
+
+    <p class="section-title">ABOUT ME</p>
+
+    <h2>Turning Ideas Into <span>Reality</span></h2>
+
+    <p class="description">
+        I am a final year Information Technology student interested in
+        software development and web technologies. I enjoy learning,
+        experimenting with new technologies and creating projects that
+        solve real-world problems.
+    </p>
+
 </section>
 
-<section id="projects">
-    <h2>Projects</h2>
-    <ul>
-        <li>Portfolio Website</li>
-        <li>Student Management System</li>
-    </ul>
+
+<!-- Skills -->
+<section id="skills" class="section skills-section">
+
+    <p class="section-title">MY SKILLS</p>
+
+    <h2>Technologies I Work With</h2>
+
+    <div class="skills">
+
+        <div class="skill-card">
+            <h3>☕ Java</h3>
+            <p>Programming & Application Development</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>🌐 HTML & CSS</h3>
+            <p>Web Design & Frontend Development</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>🐬 MySQL</h3>
+            <p>Database Management</p>
+        </div>
+
+        <div class="skill-card">
+            <h3>🐙 Git & GitHub</h3>
+            <p>Version Control & Collaboration</p>
+        </div>
+
+    </div>
+
 </section>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: Damodargouda99@gmail.com</p>
+
+<!-- Projects -->
+<section id="projects" class="section">
+
+    <p class="section-title">MY WORK</p>
+
+    <h2>Featured Projects</h2>
+
+    <div class="projects">
+
+        <div class="project-card">
+            <div class="project-icon">💻</div>
+            <h3>Portfolio Website</h3>
+            <p>
+                A responsive personal portfolio website created
+                using HTML and CSS.
+            </p>
+            <span>HTML • CSS</span>
+        </div>
+
+        <div class="project-card">
+            <div class="project-icon">🎓</div>
+            <h3>Student Management System</h3>
+            <p>
+                A system designed to manage student information
+                and academic records.
+            </p>
+            <span>Java • MySQL</span>
+        </div>
+
+        <div class="project-card">
+            <div class="project-icon">🚀</div>
+            <h3>Future Project</h3>
+            <p>
+                Currently learning and working on new software
+                development projects.
+            </p>
+            <span>Coming Soon</span>
+        </div>
+
+    </div>
+
 </section>
+
+
+<!-- Contact -->
+<section id="contact" class="contact">
+
+    <p class="section-title">GET IN TOUCH</p>
+
+    <h2>Let's <span>Connect!</span></h2>
+
+    <p>
+        Have a project idea or just want to say hello?
+        Feel free to contact me.
+    </p>
+
+    <a href="mailto:Damodargouda99@gmail.com" class="btn">
+        ✉ Email Me
+    </a>
+
+</section>
+
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Damodar Gouda | My Portfolio</p>
+</footer>
 
 </body>
 </html>
