@@ -5,10 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damodar Gouda | Portfolio</title>
 
 ```
-<title>Damodar Gouda | My Portfolio</title>
-
 <link rel="stylesheet" href="style.css">
 ```
 
@@ -17,59 +16,67 @@
 <body>
 
 ```
-<!-- Navigation -->
-<nav>
-    <h2>My Portfolio</h2>
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="logo">My Portfolio</div>
 
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
 </nav>
 
 
 <!-- Home Section -->
-<section id="home">
-
+<section id="home" class="hero">
     <h1>Hello, I'm Damodar Gouda</h1>
 
     <p>
         Final Year IT Student | Software Developer
     </p>
 
-    <button>Hire Me</button>
-
+    <a href="#contact" class="btn">Hire Me</a>
 </section>
 
 
 <!-- About Section -->
-<section id="about">
-
+<section id="about" class="section">
     <h2>About Me</h2>
 
     <p>
         Always learning, always building, always improving.
     </p>
-
 </section>
 
 
 <!-- Projects Section -->
-<section id="projects">
-
+<section id="projects" class="section">
     <h2>Projects</h2>
 
-    <ul>
-        <li>Portfolio Website</li>
-        <li>Student Management System</li>
-    </ul>
+    <div class="projects-container">
 
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>
+                A personal portfolio website created using HTML and CSS.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Student Management System</h3>
+            <p>
+                A system designed to manage student information and records.
+            </p>
+        </div>
+
+    </div>
 </section>
 
 
 <!-- Contact Section -->
-<section id="contact">
-
+<section id="contact" class="section contact">
     <h2>Contact</h2>
 
     <p>
@@ -78,7 +85,6 @@
             Damodargouda99@gmail.com
         </a>
     </p>
-
 </section>
 
 
@@ -89,4 +95,5 @@
 ```
 
 </body>
+
 </html>
