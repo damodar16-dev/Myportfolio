@@ -1,231 +1,212 @@
-/* ========================================
-RESET & GENERAL STYLES
-======================================== */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
   }
 
-html {
-scroll-behavior: smooth;
-}
-
 body {
-font-family: Arial, sans-serif;
-background-color: #f5f5f5;
-color: #333;
+background-color: #eef4f9;
+color: #1e293b;
 }
 
-/* ========================================
-NAVIGATION BAR
-======================================== */
+/* NAVBAR */
 
 .navbar {
-background-color: #0077b6;
-padding: 18px 40px;
+background-color: #12355b;
+color: white;
 display: flex;
 justify-content: space-between;
 align-items: center;
+padding: 18px 40px;
 position: sticky;
 top: 0;
 z-index: 1000;
 }
 
-.logo {
-color: white;
-font-size: 24px;
+.navbar .logo {
+font-size: 23px;
 font-weight: bold;
+color: #7dd3fc;
 }
 
-.nav-links {
-display: flex;
-gap: 25px;
-}
-
-.nav-links a {
+.navbar nav a {
 color: white;
 text-decoration: none;
-font-size: 16px;
-font-weight: bold;
+margin-left: 20px;
+font-size: 15px;
+font-weight: 500;
 }
 
-.nav-links a:hover {
-text-decoration: underline;
+.navbar nav a:hover {
+color: #7dd3fc;
 }
 
-/* ========================================
-HOME / HERO SECTION
-======================================== */
+/* HERO */
 
 .hero {
-min-height: 80vh;
-background-color: #bdefff;
-
-```
+min-height: 75vh;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-
 text-align: center;
-padding: 80px 20px;
+padding: 40px 20px;
+
+```
+background: linear-gradient(
+    135deg,
+    #12355b,
+    #176b87
+);
+
+color: white;
 ```
 
 }
 
 .hero h1 {
-color: #023e8a;
-font-size: 44px;
-margin-bottom: 15px;
+font-size: 42px;
+margin-bottom: 12px;
+color: white;
 }
 
 .hero p {
-color: #444;
-font-size: 20px;
-margin-bottom: 30px;
+font-size: 18px;
+color: #dbeafe;
+margin-bottom: 25px;
 }
 
-/* ========================================
-BUTTON
-======================================== */
+/* BUTTON */
 
 .btn {
-display: inline-block;
-background-color: #0056b3;
-color: white;
-
-```
+background-color: #38bdf8;
 padding: 12px 28px;
-
 text-decoration: none;
+color: #12355b;
 border-radius: 6px;
-
-font-size: 16px;
 font-weight: bold;
-
 border: none;
 cursor: pointer;
-```
-
+display: inline-block;
 }
 
 .btn:hover {
-background-color: #003f88;
+background-color: #7dd3fc;
 }
 
-/* ========================================
-GENERAL SECTIONS
-======================================== */
+/* GENERAL SECTIONS */
 
 .section {
-padding: 70px 30px;
+padding: 60px 30px;
 text-align: center;
-background-color: white;
+background-color: #ffffff;
 }
 
 .section h2 {
-color: #0077b6;
-font-size: 32px;
+font-size: 28px;
 margin-bottom: 20px;
+color: #12355b;
 }
 
-.section > p {
+.section p {
 max-width: 650px;
 margin: 0 auto;
-font-size: 17px;
-line-height: 1.7;
+line-height: 1.6;
+color: #475569;
 }
 
-/* ========================================
-PROJECTS
-======================================== */
+/* PROJECTS */
 
-.projects-container {
+.projects-grid {
 display: flex;
 justify-content: center;
-align-items: stretch;
-
-```
-gap: 25px;
+gap: 20px;
 flex-wrap: wrap;
-
-margin-top: 30px;
-```
-
+margin-top: 25px;
 }
 
-.project-card {
-width: 300px;
-
-```
-background-color: #f8fbff;
-
+.card {
+background: #f8fafc;
 padding: 25px;
+width: 280px;
+border-radius: 8px;
 
-border-radius: 10px;
+```
+box-shadow: 0 4px 12px rgba(18, 53, 91, 0.12);
 
-border-top: 5px solid #0077b6;
-
-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-
-text-align: center;
+border-top: 4px solid #176b87;
 ```
 
 }
 
-.project-card h3 {
-color: #0056b3;
-margin-bottom: 15px;
+.card h3 {
+margin-bottom: 10px;
+color: #176b87;
 }
 
-.project-card p {
-line-height: 1.6;
-color: #555;
+/* SKILLS */
+
+.skills-container {
+display: flex;
+justify-content: center;
+gap: 12px;
+flex-wrap: wrap;
+max-width: 600px;
+margin: 25px auto 0;
 }
 
-/* ========================================
-CONTACT
-======================================== */
-
-.contact {
-background-color: #e0f7ff;
-}
-
-.contact a {
-color: #0077b6;
-text-decoration: none;
+.skill {
+background-color: #e0f2fe;
+color: #075985;
+padding: 10px 18px;
+border-radius: 20px;
 font-weight: bold;
+border: 1px solid #7dd3fc;
 }
 
-.contact a:hover {
-text-decoration: underline;
+/* CONTACT */
+
+.contact-section {
+background-color: #dbeafe;
 }
 
-/* ========================================
-FOOTER
-======================================== */
+.contact-form {
+max-width: 450px;
+margin: 20px auto 0;
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #7dd3fc;
+border-radius: 6px;
+outline: none;
+font-size: 14px;
+background-color: white;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+border-color: #176b87;
+}
+
+/* FOOTER */
 
 footer {
-background-color: #0077b6;
-color: white;
-
-```
 text-align: center;
-
 padding: 20px;
-```
-
+color: #dbeafe;
+font-size: 13px;
+background-color: #12355b;
 }
 
-footer p {
-font-size: 14px;
-}
-
-/* ========================================
-MOBILE RESPONSIVE
-======================================== */
+/* MOBILE */
 
 @media (max-width: 768px) {
 
@@ -236,15 +217,15 @@ MOBILE RESPONSIVE
     padding: 15px 20px;
 }
 
-.nav-links {
-    gap: 15px;
+.navbar nav {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
 }
 
-.hero {
-    min-height: 70vh;
-    padding: 60px 20px;
+.navbar nav a {
+    margin-left: 0;
 }
 
 .hero h1 {
@@ -252,44 +233,11 @@ MOBILE RESPONSIVE
 }
 
 .hero p {
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .section {
-    padding: 50px 20px;
-}
-
-.section h2 {
-    font-size: 28px;
-}
-
-.project-card {
-    width: 100%;
-    max-width: 350px;
-}
-```
-
-}
-
-@media (max-width: 480px) {
-
-```
-.logo {
-    font-size: 20px;
-}
-
-.nav-links {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.hero h1 {
-    font-size: 28px;
-}
-
-.hero p {
-    font-size: 16px;
+    padding: 45px 20px;
 }
 ```
 
