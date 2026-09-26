@@ -5,9 +5,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Damodar Gouda | Portfolio</title>
 
 ```
+<title>Damodar Gouda | Portfolio</title>
+
 <link rel="stylesheet" href="style.css">
 ```
 
@@ -17,83 +18,151 @@
 
 ```
 <!-- Navigation Bar -->
-<nav class="navbar">
-    <div class="logo">My Portfolio</div>
+<header class="navbar">
 
-    <div class="nav-links">
+    <div class="logo">Damodar Gouda</div>
+
+    <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
-    </div>
-</nav>
+    </nav>
+
+</header>
 
 
-<!-- Home Section -->
+<!-- Hero Section -->
 <section id="home" class="hero">
+
     <h1>Hello, I'm Damodar Gouda</h1>
 
     <p>
-        Final Year IT Student | Software Developer
+        Final Year IT Student | Software Developer | Web Developer
     </p>
 
     <a href="#contact" class="btn">Hire Me</a>
+
 </section>
 
 
 <!-- About Section -->
 <section id="about" class="section">
+
     <h2>About Me</h2>
 
     <p>
-        Always learning, always building, always improving.
+        I am a passionate IT student with an interest in software
+        development, web development, and modern technologies. I enjoy
+        learning new skills, building useful projects, and improving my
+        technical knowledge.
     </p>
+
 </section>
 
 
 <!-- Projects Section -->
 <section id="projects" class="section">
+
     <h2>Projects</h2>
 
-    <div class="projects-container">
+    <div class="projects-grid">
 
-        <div class="project-card">
+        <div class="card">
+
             <h3>Portfolio Website</h3>
+
             <p>
-                A personal portfolio website created using HTML and CSS.
+                A personal responsive portfolio website created using
+                HTML and CSS to showcase my skills, projects, and
+                professional profile.
             </p>
+
         </div>
 
-        <div class="project-card">
+
+        <div class="card">
+
             <h3>Student Management System</h3>
+
             <p>
-                A system designed to manage student information and records.
+                A student management system designed to manage student
+                information and records efficiently.
             </p>
+
         </div>
 
     </div>
+
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="section">
+
+    <h2>Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="skill">HTML &amp; CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Python</div>
+        <div class="skill">Java</div>
+        <div class="skill">Git &amp; GitHub</div>
+        <div class="skill">Firebase</div>
+
+    </div>
+
 </section>
 
 
 <!-- Contact Section -->
-<section id="contact" class="section contact">
-    <h2>Contact</h2>
+<section id="contact" class="section contact-section">
 
-    <p>
-        Email:
-        <a href="mailto:Damodargouda99@gmail.com">
-            Damodargouda99@gmail.com
-        </a>
-    </p>
+    <h2>Contact Me</h2>
+
+    <form
+        class="contact-form"
+        onsubmit="event.preventDefault(); alert('Message Sent!');"
+    >
+
+        <input
+            type="text"
+            placeholder="Your Name"
+            required
+        >
+
+        <input
+            type="email"
+            placeholder="Your Email"
+            required
+        >
+
+        <textarea
+            placeholder="Your Message"
+            rows="4"
+            required
+        ></textarea>
+
+        <button type="submit" class="btn">
+            Send Message
+        </button>
+
+    </form>
+
 </section>
 
 
 <!-- Footer -->
 <footer>
-    <p>&copy; 2026 Damodar Gouda. All rights reserved.</p>
+
+    <p>
+        &copy; 2026 Damodar Gouda. All rights reserved.
+    </p>
+
 </footer>
 ```
 
 </body>
-
 </html>
